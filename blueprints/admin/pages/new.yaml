@@ -30,6 +30,7 @@ form:
     route:
       type: parents
       label: PLUGIN_ADMIN.PARENT_PAGE
+      default: '/blogs'
       classes: fancy
       validate:
         required: true
@@ -40,7 +41,7 @@ form:
       label: PLUGIN_ADMIN.PAGE_FILE
       help: PLUGIN_ADMIN.PAGE_FILE_HELP
       data-options@: '\Grav\Plugin\AdminPlugin::pagesTypes'
-      data-default@: '\Grav\Plugin\Admin\Admin::getLastPageName'
+      default: 'praneat-blog-item'
       validate:
         required: true
 
